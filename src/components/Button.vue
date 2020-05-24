@@ -1,5 +1,10 @@
 <template>
-  <button v-on:click="test" id="create-button">CREATE TABLE</button>
+  <button
+    v-on:click="createTable"
+    id="create-button"
+  >
+    CREATE TABLE
+  </button>
 </template>
 
 <script>
@@ -8,7 +13,7 @@ import generateTable from '../utils/generateTable';
 export default {
   name: 'Button',
   methods: {
-    test: () => {
+    createTable: () => {
       generateTable();
       const button = document.getElementById('create-button');
       button.classList.add('clicked');
