@@ -13,7 +13,7 @@ const generateTable = () => {
     data = data.replace(crossCode[0], crossCode[1]);
     data = data.replace(uniqueId[0], uniqueId[1]);
   }
-  console.log(data);
+  return data;
 };
 
 const addOuterHtml = (data, style) => {

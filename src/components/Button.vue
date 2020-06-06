@@ -1,6 +1,6 @@
 <template>
   <button
-    v-on:click="createTable"
+    @click="createTable"
     id="create-button"
   >
     CREATE TABLE
@@ -13,13 +13,15 @@ import generateTable from '../utils/generateTable';
 export default {
   name: 'Button',
   methods: {
-    createTable: () => {
-      generateTable();
+    createTable() {
+      console.log('Inside "createTable" method');
+      const tableHTML = generateTable();
       const button = document.getElementById('create-button');
       button.classList.add('clicked');
       setTimeout(() => {
         button.classList.remove('clicked');
       }, 200);
+      this.$emit('tableGenerated', tableHTML);
     }
   }
 }

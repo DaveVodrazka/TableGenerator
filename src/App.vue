@@ -2,21 +2,21 @@
   <div id="app">
     <Heading msg="Table Generator"/>
     <Table />
-    <Button />
+    <OutputField />
   </div>
 </template>
 
 <script>
 import Heading from './components/Heading.vue';
 import Table from './components/Table.vue';
-import Button from './components/Button.vue';
+import OutputField from './components/OutputField.vue';
 
 export default {
   name: 'App',
   components: {
     Heading,
     Table,
-    Button
+    OutputField
   }
 }
 </script>
