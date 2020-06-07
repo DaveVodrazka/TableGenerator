@@ -1,7 +1,8 @@
 {
-  "name": "hello-world",
+  "name": "table-generator",
   "version": "0.1.0",
   "private": true,
+  "author": "David Vodrážka",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
