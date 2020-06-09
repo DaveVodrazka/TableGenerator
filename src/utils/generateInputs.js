@@ -1,6 +1,6 @@
 const getDimensions = () => {
-  let columns = 5;
-  let rows = 5;
+  let columns = 10;
+  let rows = 10;
   const url = window.location.href;
   if (url.includes('?')) {
     const utms = url.split('?')[1];
