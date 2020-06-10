@@ -2,8 +2,8 @@ import getTableData from './getTableData';
 import styles from '../styles/styles.json';
 
 const generateTable = () => {
-  const checkCode = ['.check', styles.check];
-  const crossCode = ['.cross', styles.cross];
+  const checkCode = ['.check', '<img src="http://fondikassets.cz/check.svg" />'];
+  const crossCode = ['.cross', '<img src="http://fondikassets.cz/cross.svg" />'];
   const uniqueId = ['.id', getUniqueId(7)];
   const style = 'nastroje';
 
